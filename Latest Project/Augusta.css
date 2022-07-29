@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Montserrat:wght@100&display=swap');
+/*font-family: 'Edu NSW ACT Foundation', cursive;
+font-family: 'Montserrat', sans-serif;*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*Media query for laptop devices*/
+@media only screen and (min-device-width:768px) and (max-device-width:1140px){
+
+}
+/*Media query for smaller devices*/
+@media only screen and (min-device-width:320px) and (max-device-width:768px){
+body{
+    background-color: rgb(250, 249, 249);
+    margin: 0;
+    padding: 0;
+}
+.logo-design{
+    margin: 10px;
+    margin-top: -10px; 
+}
+.logo{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+#menu-border{
+    float:right;
+    border: 1px solid rgb(5, 88, 121);
+    width: 100px;
+    height: 80px;
+    margin-top: -152px;
+    margin-right: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 2.3);
+}
+.menu_bar{
+    display: grid;
+    position: relative;
+    width: 55px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    float: right;
+    margin-top: 15px;
+    margin-right: 53px;
+}
+.menu_bar .bar, .menu_bar:after, .menu_bar:before{
+    width: 47px;
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: black;
+    margin: 5px 10px;
+    transition: .3s;
+    border-radius: 5px;
+    transform: rotate(-45deg) translate(18px, 18px);
+}
+.menu_bar.is-active:before{
+    transform: rotate(-45deg) translate(-18px, 18px);
+}
+.menu_bar.is-active:after{
+    transform: rotate(45deg) translate(-15px, -15px);
+}
+.menu_bar.is-active .bar{
+    opacity: 0;
+}
+.mobile-nav{
+    display: block;
+    position: fixed;
+    right: 0;
+    right: -100%;
+    width: 23%;
+    font-size: 37px;
+    min-height: 20vh;
+    z-index: 98;
+    background-color: rgb(250, 249, 249);
+    border: 1px solid rgba(116, 113, 113, 0.5);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    padding-top: 20px;
+    transition: .2s;
+    margin-top: -20px;
+    border-radius: 15px;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 2.3);
+    margin-right: 50px;
+}
+.mobile-nav.is-active{
+    right: 0;
+}
+.mobile-nav a{
+    display:grid;
+    justify-content: center;
+    width: 30%;
+    max-width: 600px;
+    margin:0 auto 16px;
+    padding: 5px 8px;
+    color: rgb(5, 88, 121);
+    text-decoration:none;
+    margin-top: 30px;
+}
+.line1{
+    width: 100px;
+    height:7px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: orange;
+}
+.introduction{
+    width: 100%;
+    height: 850px;
+    background-color: black;
+    border-radius: 20px;
+    margin-top: -120px;
+}
+#community{
+    font-size: 80px;
+    color: #fff;
+    margin: 15px;
+    padding: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+#community2{
+    color: #fff;
+    margin: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    padding: 40px;
+    font-weight: normal;
+}
+#community3{
+    margin: 55px;
+    font-size: 30px;
+    padding: 20px;
+    width: 300px;
+    background-color: black;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+#community3 a{
+    text-decoration: none;
+    margin: auto;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+#community3:hover{
+    background-color: rgb(5, 88, 121);
+}
+
+.picture_frame{
+    display: grid;
+    justify-content: center;
+}
+.picture_frame img{
+    margin-top: 120px;
+    width: 460px;
+    height: 280px;
+    border-radius: 10px;
+}
+.pagethree{
+    border: 2px solid rgb(175, 165, 165);
+    background-color: rgb(39, 36, 36);
+    width: 800px;
+    height: 570px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 150px;
+}
+.info{
+    margin: 20px;
+    padding: 20px;
+    font-size: 35px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.image5{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 20px;
+}
+.title{
+    font-family: monospace;
+    color: rgb(28, 155, 206);
+    font-size: 40px;
+    font-weight: bold;
+}
+#image_5{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+}
+.fa-bell{
+    position: absolute;
+    font-size: 40px;
+    margin-top: -20px;
+    margin-left: -200px;
+    color:  rgb(5, 88, 121);
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    transition: ease-in-out;
+}
+.mydiary{
+    margin: 0 auto;
+    border: 1px solid #fff;
+    width: 500px;
+    height: 100px;
+    background-color: rgb(5, 88, 121);
+    margin-top: 80px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 50px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 15px;
+    color: #fff;
+}
+.carousel{
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.image-container{
+    transition: transform 0.3s linear;
+    transform: translateX(0);
+    margin-top: 100px;  
+}
+img{
+    margin: 0 auto;
+    object-fit: cover;
+    height: 500px;
+    width: 700px;
+    border-radius: 15px; 
+}
+.line01{
+    width: 100%;
+    height: 1px;
+    margin-top: 100px;
+    background-color: rgb(156, 152, 152);
+}
+.footer_info{
+    color: black;
+    padding-top: 30px;
+    font-size: 27px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+.pop-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.pop-container.active{
+    display: flex;
+}
+.popup{
+   background-color: white;
+   width: 500px;
+   height: 150px;
+   border-radius: 15px;
+   padding: 2rem;
+   position: relative;
+   margin-top: -1200px;
+   border: 2px solid rgb(5, 88, 121);
+   margin-right: 150px;
+   font-size: 40px;
+   font-family: 'Edu NSW ACT Foundation', cursive;
+}
+.popup button{
+    color:  rgb(5, 88, 121);
+    font-size: 45px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border: none;
+}
+.lets{
+    margin: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 50px;
+    margin-top: 130px;
+    font-weight: bolder;
+}
+.mail{
+    width: 600px;
+    height: 150px;
+    margin: 150px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-top: 70px;
+    background-color:  rgb(5, 88, 121);
+}
+.send{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 40px;
+    color: #fff;
+    padding: 30px;
+}
+.fa-envelopes-bulk{
+    color: black;
+    margin-left: 15px;
+}
+.mail_address{
+    color: #fff;
+    font-size: 40px;
+    margin-left: 40px;
+    margin-top: -20px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+form{
+    width: 800px;
+    height: 1200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: rgb(39, 36, 36);
+}
+.form_group{
+    margin: 50px;
+}
+.hello{
+    font-size: 70px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    color: rgb(28, 155, 206);
+    text-align: center;
+}
+label{
+    font-size: 40px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    color: #fff;
+    
+}
+input{
+    margin-top: 20px;
+    width: 500px;
+    height: 70px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+input, textarea, placeholder{
+    font-size: 25px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+textarea{
+    margin-top: 20px;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+#button{
+    display: block;
+    width: 250px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+}
+#button:hover{
+    background-color: rgb(28, 155, 206);
+    outline: none;
+    border: none;
+    color: cornsilk;
+}
+.fa-user, .fa-house-user{
+    margin: 0 auto;
+    font-size: 25px;
+    color: black;
+}
+.fa-hand-sparkles{
+    font-size: 45px;
+    color: #fff;
+}
+
+
+}

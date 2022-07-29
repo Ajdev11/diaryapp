@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Augusta</title>
+    <script src="https://kit.fontawesome.com/1d2533baae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Augusta.css">
+</head>
+<body>
+<div class="logo-design">
+        <img class="logo" src="./images/logo.png" alt="">
+</div>
+   <!--menu-bar-->
+<div id="menu-border">
+   <button class="menu_bar">
+        <div class="bar"></div>
+   </button>
+   <!--icons-->
+   <button><i class="fa-solid fa-bell"></i></button>
+   <div class="pop-container" id="container">
+       <div class="popup">
+           <button id="close">x</button>
+            <p>No New Notification!!</p></div>
+   </div>
+  <!--<i class="fa-solid fa-circle-half-stroke"></i>-->
+</div>
+   <!--Mobile-nav-->
+<nav class="mobile-nav">
+       <a href="index.html"><i class="fa-solid fa-house-user"></i>Home</a>
+       <div class="line1"></div>
+</nav>  
+<!--contact form-->
+<form action="https://formspree.io/f/mbjwevjq" method="post" id="my-form">
+        <div class="form_group">
+            <h3 class="hello">Hello <i class="fa-solid fa-hand-sparkles"></i> </h3> <br><br>
+            <label for="name">Firstname:</label> <br><br>
+            <input type="text" name="" id="email" placeholder="enter name"  required>
+        </div>
+        <div class="form_group">
+            <label for="name">Email:</label> <br><br>
+            <input type="email" name="" id="email" placeholder="enter email" required>
+        </div>
+        <div class="form_group">
+            <label for="name">Message:</label> <br><br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="enter message" required></textarea>
+        </div>
+        <button id="button" type="submit">Submit</button>
+        <div id="status"></div>
+</form>
+    <script src="./Augusta.js"></script>
+</body>
+</html>
